@@ -1,29 +1,28 @@
-# CodingDojo2
+# Coding Dojo 2 : Potter Kata
 
-Potter Kata
+This project is a Ruby template for the Potter Kata.
+For details on the Kata itself see 
+http://codingdojo.org/cgi-bin/wiki.pl?KataPotter 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+To install the environment just ensure `bundler` is present and
+execute it inside the project:
 
-    gem 'coding_dojo_2'
+    gem install bundle # if necessary
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install coding_dojo_2
+    git clone https://github.com/dbroeglin/coding_dojo_2.git
+    cd coding_dojo_2
+    bundle
 
 ## Usage
 
-TODO: Write usage instructions here
+You can either run the specs yourself with:
 
-## Contributing
+    bundle exec rake
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+or you can use guard to run them automatically upon change:
+
+    bundle exec guard
+
+Have fun doing the Kata!
