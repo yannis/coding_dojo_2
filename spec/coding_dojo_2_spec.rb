@@ -5,7 +5,7 @@ describe CodingDojo2::Potter do
     subject.calculate([]).should == 0
   end
 
-  it "should cost 8 for 1 book" do
+  pending "should cost 8 for 1 book" do
     subject.calculate([0]).should == 8
     subject.calculate([1]).should == 8
     subject.calculate([2]).should == 8
@@ -13,46 +13,46 @@ describe CodingDojo2::Potter do
     subject.calculate([4]).should == 8
   end
 
-  it "should discount nothing for identical books" do
+  pending "should discount nothing for identical books" do
     subject.calculate([0, 0]).should == 8 * 2
     subject.calculate([1, 1, 1]).should == 8 * 3
   end
 
-  it "should discount 5% for 2 different books" do
+  pending "should discount 5% for 2 different books" do
     subject.calculate([0, 1]).should == 8 * 2 * 0.95
   end
 
-  it "should discount 10% for 3 different books" do
+  pending "should discount 10% for 3 different books" do
     ubject.calculate([0, 2, 4]).should == 8 * 2 * 0.9
   end
 
-  it "should discount 20% for 4 different books" do
+  pending "should discount 20% for 4 different books" do
     subject.calculate([0, 1, 2, 4]).should == 8 * 4 * 0.8
   end
 
-  it "should discount 25% for 5 different books" do
+  pending "should discount 25% for 5 different books" do
     subject.calculate([0, 1, 2, 3, 4]).should == 8 * 5 * 0.75
   end
 
-  it "should discount 5% for 2 different books out of 3" do
+  pending "should discount 5% for 2 different books out of 3" do
     subject.calculate([0, 0, 1]).should == 8 + (8 * 2 * 0.95)
   end
 
-  it "should discount 5% for 2 pairs of different books" do
+  pending "should discount 5% for 2 pairs of different books" do
     subject.calculate([0, 0, 1, 1]).should == 2 * (8 * 2 * 0.95)
   end
 
-  it "should discount 5% and 20% for 2 and 4 different books" do
+  pending "should discount 5% and 20% for 2 and 4 different books" do
     subject.calculate([0, 0, 1, 2, 2, 3])
       .should == (8 * 2 * 0.95) + (8 * 4 * 0.8)
   end
 
-  it "should discount 25% and nothing for 5 and 1 different books" do
+  pending "should discount 25% and nothing for 5 and 1 different books" do
     subject.calculate([0, 1, 1, 2, 3, 3])
       .should == 8 + (8 * 5 * 0.75)
   end
 
-  it "should be clever about grouping different books" do
+  pending "should be clever about grouping different books" do
     subject.calculate([0, 0, 1, 1, 2, 2, 3, 4])
       .should == 2 * (8 * 4 * 0.8)
     subject.calculate([
