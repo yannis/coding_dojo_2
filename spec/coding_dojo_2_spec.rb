@@ -23,7 +23,7 @@ describe CodingDojo2::Potter do
   end
 
   pending "should discount 10% for 3 different books" do
-    ubject.calculate([0, 2, 4]).should == 8 * 2 * 0.9
+    subject.calculate([0, 2, 4]).should == 8 * 3 * 0.9
   end
 
   pending "should discount 20% for 4 different books" do
@@ -48,7 +48,7 @@ describe CodingDojo2::Potter do
   end
 
   pending "should discount 25% and nothing for 5 and 1 different books" do
-    subject.calculate([0, 1, 1, 2, 3, 3])
+    subject.calculate([0, 1, 1, 2, 3, 4])
       .should == 8 + (8 * 5 * 0.75)
   end
 
