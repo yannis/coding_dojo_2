@@ -10,13 +10,12 @@ module CodingDojo2
 
       series = []
       rest = []
+
       for book in books
         series.include?(book) ? rest << book : series << book
       end
 
-      if series.count > 4 && rest.uniq.count == 3
-        rest << series.slice!(-1)
-      end
+      rest << series.slice!(-1) if series.count > 4 && rest.uniq.count == 3
 
       price = series.count * 8 * discount_factors[series.count]
       rest_price = calculate(rest)
