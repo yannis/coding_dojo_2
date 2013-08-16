@@ -1,8 +1,10 @@
 # Coding Dojo 2 : Potter Kata
 
+[![Code Climate](https://codeclimate.com/github/yannis/coding_dojo_2.png)](https://codeclimate.com/github/yannis/coding_dojo_2)
+
 This project is a Ruby template for the Potter Kata.
-For details on the Kata itself see 
-http://codingdojo.org/cgi-bin/wiki.pl?KataPotter 
+For details on the Kata itself see
+http://codingdojo.org/cgi-bin/wiki.pl?KataPotter
 
 ## Installation
 
